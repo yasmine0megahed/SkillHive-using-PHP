@@ -1,0 +1,104 @@
+@import "../bootstrap/css/bootstrap.min.css";
+*{
+    --blueColor:#3498db; 
+    --bodyColor:#eee;
+    --barColor:white;
+    --red:#d44242
+}
+#catId>li>a
+{
+    height: 10vh;
+padding-top: 3vh;
+}
+.activeIt
+{
+    background-color:var(--bodyColor) !important;
+height: 10vh;
+padding-top: 3vh;
+}
+#allJobsId {
+    margin-top: 2vh;
+    width: 100%
+
+}
+
+#catId {
+    height: 90vh;
+    background-color:var(--barColor) ;
+
+}
+
+#catId>li {
+    width: 80%;
+
+    /* style="width:80%;" */
+}
+#jobsandcat{
+    background-color:var(--bodyColor) ;
+    margin-top: 10vh;
+    height:90vh;
+}
+.eachjob
+    {
+        background-color: var(--barColor) !important;
+        /* margin-left: 5vw; */
+        margin-right: 5vw;
+        
+    }
+@media screen and (max-width :1000px) {
+
+    #catId {
+        flex-direction: row;
+        height: 10vh;
+        width: 100vw;
+        border-bottom: none;
+        
+
+    }
+
+    #allJobsId {
+        /* overflow: scroll; */
+        width: 100vw;
+        padding:0 !important;
+        margin: 0;
+        /* background-color: white !important; */
+        /* border: solid aqua; */
+
+    }
+
+    #jobsandcat {
+        flex-direction: column;
+        /* border: solid aqua; */
+        /* background-color: white !important; */
+        margin-top: 8vh;
+
+    }
+
+    #catId>li {
+        width: 20%;
+        height: 80%;
+        margin: 0 !important;
+        /* style="width:80%;" */
+    }
+
+    #catId>li>a {
+        height: 10vh;
+        padding-bottom: 20%;
+        width:fit-content;
+
+    }
+    .eachjob
+    {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        /* height : 100vh; */
+    }
+    
+    #catId>li>a>span
+    {
+        display: none ;
+    }   
+    /* .eachJob{
+    border:blue;
+} */
+}
